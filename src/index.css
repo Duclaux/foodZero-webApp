@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+body{
+    background: #000;
+}
+
+@theme {
+
+    /* COLORS */
+    --color-charcoal: #4D4D4D;
+    --color-deep-forest: #233000;
+    --color-olive: #5E6600;
+    --color-chartreuse: #9CAA00;
+    --color-sage-mist: #EBF0E4;
+    --color-silver: #B0B0B0;
+    --color-sage-mist: #EBF0E4;
+
+    /* SHADOW */
+    --shadow-olive: linear-gradient(135deg, rgba(35, 48, 0, 1) 0%, rgba(35, 48, 0, 0) 100%);
+
+    /* FONTs */
+    --font-rufina: "Rufina", serif;
+    --font-lato: "Lato", serif;
+
+    /* BREAKPOINTS */
+    --breakpoint-3xl: 1800px;
+}
+
+
+/* Global classe */
+.hero-heading {
+  @apply font-rufina font-bold text-[48px]/[100%] md:text-[88px]/[100%] lg:text-[148px]/[100%];
+}
+
+.heading-1 {
+  @apply font-rufina font-bold text-[40px]/[100%] md:text-[68px]/[100%] lg:text-[108px]/[100%];
+}
+
+.heading-2 {
+  @apply font-rufina font-bold text-[36px]/[100%] md:text-[56px]/[100%] lg:text-[88px]/[100%];
+}
+
+.heading-3 {
+  @apply font-rufina font-bold text-[30px]/[100%] md:text-[48px]/[100%] lg:text-[68px]/[100%];
+}
+
+.heading-4 {
+  @apply font-rufina font-bold text-[26px]/[100%] md:text-[36px]/[100%] lg:text-[48px]/[100%];
+}
+
+.heading-5 {
+  @apply font-rufina font-bold text-[22px]/[100%] md:text-[28px]/[100%] lg:text-[32px]/[100%];
+}
+
+.heading-6 {
+  @apply font-rufina font-bold text-[20px]/[100%] md:text-[23px]/[100%] lg:text-[26px]/[100%];
+}
+
+.body {
+  @apply font-lato font-normal text-lg/[100%] md:text-xl/[100%] lg:text-2xl/[100%];
+}
+
+.body-bold {
+  @apply font-lato font-bold text-lg/[100%] md:text-xl/[100%] lg:text-2xl/[100%];
+}
+
+.body-cap {
+  @apply font-lato font-normal text-base/[140%] md:text-lg/[140%] lg:text-xl/[140%];
+}
+
+.excerpt {
+  @apply font-lato font-bold text-[18px]/[140%] md:text-[20px]/[140%] lg:text-[22px]/[140%];
+}
+
+.label {
+  @apply font-lato font-normal text-[16px]/[100%] lg:text-[18px]/[100%];
+}
+
+.widgets-comments {
+  @apply font-lato font-normal text-[13px]/[100%] lg:text-[14px]/[100%];
+}
+
+.nav-item {
+  @apply font-rufina font-bold text-[32px]/[100%] md:text-[48px]/[100%] lg:text-[66px]/[100%];
+}
+
+.nav-subitem {
+  @apply font-rufina font-normal text-lg/[100%] md:text-xl/[100%] lg:text-2xl/[100%];
+}
+
+.widgets-title {
+  @apply font-rufina font-normal text-lg/[100%] lg:text-xl/[100%];
+}
+
+.widgets-texte {
+  @apply font-lato font-normal text-[16px]/[100%] lg:text-[18px]/[100%];
+}
+
+.portfolio-categories {
+  @apply font-lato font-normal text-lg/[100%] md:text-xl/[100%] lg:text-2xl/[100%];
+}
