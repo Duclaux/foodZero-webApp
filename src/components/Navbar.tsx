@@ -1,7 +1,7 @@
 
 function Navbar() {
   return (
-    <h1 className="">
+    <h1 className="hero-heading">
       Navbar
     </h1>
   )
