@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body{
+    background: #000;
+}
+
 @theme {
 
     /* COLORS */
@@ -17,6 +21,9 @@
     /* FONTs */
     --font-rufina: "Rufina", serif;
     --font-lato: "Lato", serif;
+
+    /* BREAKPOINTS */
+    --breakpoint-3xl: 1800px;
 }
 
 
@@ -58,7 +65,7 @@
 }
 
 .body-cap{
-    @apply font-lato font-regular text-xl/[140%];
+    @apply font-lato font-normal text-xl/[140%];
 }
 
 .excerpt{
@@ -66,11 +73,11 @@
 }
 
 .label{
-    @apply font-lato font-regular text-[18px]/[100%];
+    @apply font-lato font-normal text-[18px]/[100%];
 }
 
 .widgets-comments{
-    @apply font-lato font-regular text-[14px]/[100%];
+    @apply font-lato font-normal text-[14px]/[100%];
 }
 
 .nav-item{
