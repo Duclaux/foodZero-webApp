@@ -1,7 +1,7 @@
 
 function Navbar() {
   return (
-    <h1>
+    <h1 className="">
       Navbar
     </h1>
   )
