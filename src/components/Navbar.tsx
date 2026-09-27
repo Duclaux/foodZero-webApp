@@ -48,7 +48,7 @@ function Navbar() {
           />
 
           <div className="bg-deep-forest/80 w-full h-full absolute -z-20"/>
-          <ul className="flex flex-col space-y-10 absolute top-30 left-75 list-disc list-inside">
+          <ul className="flex flex-col space-y-10 absolute top-30 left-30 lg:top-30 lg:left-75 list-disc list-inside">
             {
               links.map((link) => {
                 const isActive = location.pathname === link.to;
@@ -65,7 +65,7 @@ function Navbar() {
             }
           </ul>
 
-          <div className="align-bottom absolute bottom-56.5 right-46.5">
+          <div className="hidden lg:bloc align-bottom absolute bottom-56.5 right-46.5">
             <div className="w-62.5 border-b-2 border-dashed pb-3.5">
               <h1 className="heading-5">Contact</h1>
             </div>
